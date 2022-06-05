@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: Lato, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/*Common*/
+.text-white {
+    color: white !important;
+}
+.shadow{
+    text-shadow: 0 0 5px;
+}
+.text-center {
+    text-align: center !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.3333%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.textbox-features {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    line-height: 22.5px;
+    font-size: 15px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.items-align{
+    margin-bottom: 64px;
+}
+
+/*Main*/
+
+#header {
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav{
+    display: inline-block;
+}
+.nav-arrow-down{
+    font-size: 15px;
+    font-style: bold;
+}
+
+#nav > li {
+    display: inline-block;
+    /* padding: 24px 12px; */
+}
+#nav li {
+    line-height: 46px;
+    position:relative;
+}
+#nav > li > a {
+    color: white;
+    
+}
+#nav li a {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 24px;
+    
+}
+#nav > li:hover > a{
+    color: black;
+}
+#nav li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%);
+}
+#nav .subnav a {
+    padding: 0 24px;
+}
+.subnav li a{
+    color: #000;
+}
+
+#header .search-btn{
+    float: right;
+    color: white;
+    padding: 14px 24px;
+    height: 100%
+}
+
+#nav .more {
+    color: white;
+    padding: 0 24px;
+    font-size: 15px;
+
+}
+
+#nav li:nth-child(5):hover div{
+    color: black;
+    /* background-color: #ccc; */
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+} 
+#slider{
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px;
+    background: url('https://www.w3schools.com/w3images/la.jpg') top center / cover no-repeat;
+}
+#slider .text-content{
+    position: absolute;
+    width: 100%;
+    bottom: 47px;
+    color: white;
+}
+#slider .text-heading{
+    text-align: center;
+}
+#slider .text-description{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#content .content-section{
+    padding: 64px 16px;
+    width: 800px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin:25px 0 15px ;
+}
+#content .about-text {
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .member-list {
+    margin-top: 47px;  
+}
+
+#content .member-name {
+    margin: 15px 0;
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
+}
+/*Tour section CSS*/
+.tour-section{
+    background-color: black;
+}
+
+.tickets-list {
+    background-color: white;
+    margin-top: 40px;
+}
+
+.tickets-list li {
+    padding: 11px 16px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    font-size: 15px;
+    color: #757575;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    width: 25px;
+    height: 22px;
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin-right: 16px;
+    text-align: center;
+    line-height: 23px;
+    margin-top: -1px;
+}
+.places-list{
+    overflow: hidden;
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-body{
+    background-color: white;
+    padding: 8px 16px;
+    font-size: 15px;
+    padding: 15px 16px 0px;
+}
+.place-heading{
+    margin-top: 15px 0;
+}
+.place-time{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+.place-desc{
+    margin-top: 15px;
+}
+.place-buy-btn{
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0 16px;
+    border: none;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color:#000;
+}
+/* Contact */
+.registration{
+    margin-top: 25px;
+}
+
+.contact-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.send-btn {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    width: 71px;
+    font-size: 15px;
+    height: 38px;
+    margin: 16px 0;
+    border: none;
+    float: right;
+}
+.send-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+.contact-icons {
+    width: 30px;
+}
+
+/* End contact */
+
+/*End Tour section*/
+
+/* Footer */
+.platform-icons a{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.platform-icons a:hover{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*Animations*/
+@keyframes box-appearance {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Footer */
+#footer {
+    background-color: rgb(241, 241, 241);
+    padding: 64px 16px;
+}
+.footer-text-color{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer div:nth-child(2) p {
+    margin: 15px 0;
+}
+
+

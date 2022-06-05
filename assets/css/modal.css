@@ -1,0 +1,105 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    animation: box-appearance ease 0.5s;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: white;
+    width: 900px;
+    animation: box-appearance 1s;
+}
+
+
+
+
+.modal-header > h2 {
+    text-align: center;
+    padding: 32px 16px;
+    background-color: #009688;
+    color: white;
+    margin-bottom: 15px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.modal-main {
+    width: 92%;
+    margin: 0 auto;
+}
+
+
+.modal-label {
+    display: block;
+    margin: 15px 0;
+}
+
+.modal-footer {
+    width: 92%;
+    margin: 0 auto;
+}
+.pay-btn {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    padding: 16px;
+    margin-top: 16px;
+    border: none;
+}
+
+.pay-btn:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.close-btn {
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    width: 83px;
+    height: 38px;
+    margin: 16px 0;
+    border: none;
+    transition: ease-in-out .2s;
+}
+
+.close-btn:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+.close-icon {
+    color: white;
+    float: right;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.help-link {
+    float: right;
+    margin-top: 3%;
+}
+
+.help-link a {
+    color: #2196F3;
+}
