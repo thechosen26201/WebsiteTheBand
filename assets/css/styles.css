@@ -114,10 +114,22 @@ html {
 #nav li:hover{
     background-color: #ccc;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 #nav li:hover .subnav {
     display: block;
+    animation: appear ease 0.3s;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 #nav .subnav{
